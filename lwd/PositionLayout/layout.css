@@ -1,0 +1,148 @@
+/*.parent{
+    background-color: aqua;
+    font-size: 20px;
+    left:20px;
+    position: static;
+
+}*/
+.parent{
+    background-color: aqua;
+    width: 75vw;
+    height: 75vh;
+    position: relative;
+    z-index: -1;
+}
+.child{
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+.achild{
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+}
+.rpclass{
+    position: relative;
+    bottom: 50px;
+    
+}
+.childCard{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    float: left;
+    margin: 10px;
+}
+.child1{
+    background-color: rgb(43, 175, 48);
+    position: relative;
+    left:50px;
+}
+.child2{
+    background-color: rgb(151, 151, 216);
+    position: relative;
+    z-index: 1;
+}
+.child3{
+    background-color: rgb(21, 127, 239);
+    position: relative;
+    left:-50px;
+    z-index: -1;
+}
+.child4{
+    background-color: rgb(180, 213, 11);
+    position: relative;
+    left:-240px;
+    bottom:50px;
+    z-index:0;
+}
+.child5{
+    background-color: rgb(210, 9, 190);
+    position: relative;
+    left:-360px;
+    top:50px;
+    z-index: 0;
+}
+.verticalLine{
+    /*position: relative;*/
+}
+.line{
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 20px;
+    background-color: blueviolet;
+}
+.line1{
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 20px;
+    left:30px;
+    background-color: rgb(43, 226, 80);
+    right: 20%;
+}
+.parentFixed{
+    position: relative;
+    width: 500px;
+
+background-color: lightcoral;
+
+left: 300px;
+padding: 10px;
+margin-bottom: 50px;
+}
+.childFixed{
+    width: 50px;
+    height:50px;
+    top:0;
+    position: fixed;
+    background-color: rgb(54, 13, 237);
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    background-color: coral;
+    text-align: center;
+}
+.footerContainer{
+    background-color: white;
+    position: fixed;
+    height: 20px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+header{
+    position: fixed;
+    background-color: aqua;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    top: 0px;
+}
+footer{
+    position: fixed;
+    background-color: aqua;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+main{
+    position: relative;
+    top: 75px;
+    background-color: antiquewhite;
+    z-index: -1;
+    bottom: 20px;
+}

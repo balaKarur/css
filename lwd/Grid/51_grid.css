@@ -1,0 +1,41 @@
+/*align-items: center;/ From conatiner align each content center in verticaly /
+justify-items: center;/ From conatiner  align each content center in horizontal /
+//List of options -> center ,start , end , stretch, space-between , space-around,space-evenly
+align-content: center;/ From conatiner align entier content center in verticaly /
+justify-content: center;/ From conatiner align entier content center in horizontal /
+//This will be given in each item to control
+align-self: center;/*From conatiner align specific content center in verticaly /
+justify-self: center;From conatiner align specific content center in horizontal*/
+body{
+    margin: 0px;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    background-color: #eee;
+    margin: auto;
+     display: grid;
+    /* grid-template-columns:repeat(2,1fr) ; */
+    grid-template-columns:150px 150px ;
+    grid-template-rows: 150px 150px;
+    gap:20px;
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+    /* grid-auto-flow: column; */
+    grid-auto-flow: row;
+    align-items: center;/*align content center in verticaly*/
+    justify-items: center;/*align content center in horizontal*/
+    align-content: center;
+    justify-content: center;
+}
+.item{
+ background-color: rgb(25, 181, 228);
+ padding: 20px;
+ border: 1px dotted black;
+ font-size: 20px;
+}
+.item-2{
+grid-row: 2 / span 2;
+align-self: stretch;
+justify-self: stretch;
+}

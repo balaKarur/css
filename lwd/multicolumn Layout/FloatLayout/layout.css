@@ -1,0 +1,34 @@
+.columns{
+    column-count: 4;/*max column count*/
+    column-width:250px;/*min column width*/
+    /*or*/
+    /*columns: 4 250px;*/
+   /* text-align: justify;*/
+    column-rule: 1px solid gray;
+    background-color: aqua;
+    padding: 10px;
+    font-size: 20px;
+    column-gap: 1em;
+
+}
+blockquote{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    column-span: all;
+}
+.fill{
+    column-count: 4;
+    column-fill: auto;
+    height: 200px;
+    background-color: rgb(116, 215, 23);
+    font-size: 20px;
+}
+/*column-count:4;
+column-width:200px
+column-gap:1em
+column-rule:1px solid red
+column-fill:auto;//if we mention height 
+columns:4 200px;
+column-span:all
+*/

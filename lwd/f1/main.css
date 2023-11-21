@@ -1,0 +1,106 @@
+/*intrinsic vs extrinsic 
+width vs 100%
+min-content , max-content , fit-content*/
+*, *::before , *::after{
+    box-sizing: border-box;
+}
+body {
+    margin:0px;
+    padding-left:10px
+}
+div{
+    background-color: red;
+    /*width: 100%;*/ /*This will introduce scrollbar reason we used 100% in addition added padding ,so its going above 100%*/
+    width: auto; /*to avoid scrollbar, its default ,Value applied full row*/
+    /* width:min-content; *//*Longenst word size , width will applied*/
+    /*width:max-content;*/ /*it will take max content , in lesser width it will introduce scrroll bar */ 
+    /*width: fit-content;*/ /*value applied only to teh content size,based on scren size the content will automatically wrap to next line*/ 
+    font-size: 25px;
+    padding: 10px;
+}
+.box-model{
+    background-color: blue;
+    /*width: 100px;*/
+    height:100px;
+    margin: 10px;
+    border: 2px solid green;
+    /*box-sizing: content-box;*//*default box model*/
+    box-sizing: border-box;
+}
+/* *-> part of 'google' value matched  */
+a[href*="google"]{
+    color: white;
+}
+/*^ mean start with string*/
+a[href^="https"]{
+    color: black;
+}
+/*$ mean ends with string*/
+a[href$=".com"]{
+    color: yellow;
+}
+/*Grouping selector*/
+h1, .head2, h3 {
+    color: rebeccapurple;
+}/*Pseudo class*/
+h1:hover{
+    color:brown;
+    outline: 1px dotted green;
+    width:fit-content;
+    padding:0 5px;
+}
+/*Pseudo element, can insert content to html element*/
+h1::before{
+    content:"before pseudo element ->";
+} 
+/*Pseudo element, can style specific part of the html element*/
+li::marker{
+    color: rgb(255, 0, 136);
+}
+::selection{
+    background: white;
+    color: red;
+}
+/*Descentend selector*/
+.my-div p{
+    color: rgb(55, 228, 16);
+}
+.my-div strong{
+    color: rgb(0, 42, 255);
+    font-size: 20px;
+}
+/*direct descentend selected*/
+.my-div > strong{
+    color: rgb(255, 64, 0);
+    font-size: 30px;
+}
+/*Adjecent selector --> next sibling*/
+.my-div + div{
+    color: blueviolet;
+}
+/*Adjecent selector -> any where in the sibling*/
+.my-div ~ span{
+    color: rgb(226, 43, 131);
+    font-size: 20px;
+}
+/*compound selector*/
+h5.c1{
+    color: rgb(226, 43, 131);
+    font-size: 20px;
+}
+.c1{
+    color: rgb(226, 43, 131);
+    font-size: 40px;
+}
+.parent{
+   color:yellow;
+   font-size: 25px;
+   background-color: rgb(165, 185, 12);
+   border:2px solid red;
+}
+.child
+{
+    all:unset;
+    border: initial;
+    background-color:initial;
+}

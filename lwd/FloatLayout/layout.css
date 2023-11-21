@@ -1,0 +1,90 @@
+*, ::after ::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: gray; 
+}
+header{
+    background-color: rgb(43, 49, 226);
+    padding: 10px;
+    font-size: 20px;
+}
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.logo{
+    float:left
+ }
+ nav{
+    float: right;
+}
+ul{
+    all:unset;
+}
+nav ul li{
+    display: inline;
+}
+li a{
+   text-decoration: none;
+   
+}
+
+.container{
+    font-size: 20px;
+    background-color: rgb(49, 169, 182);
+    padding-top: 1px;
+    max-width: 80%;
+    margin: auto;
+}
+.container::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.main-section{
+    float: left;
+    width:70%;
+}
+aside{
+    float: right;
+    width:28%;
+    background-color: burlywood;
+    padding-left: 10px;
+}
+footer{
+    text-align: center;
+    font-size: inherit;
+}
+
+
+/*
+.content{
+    
+    width:45%;
+    float: left;
+    background-color: aqua;
+    border: 1px solid green;
+    margin: 5px;
+}*/
+/*.imageContainer1{
+    background-color: rgb(223, 212, 8);
+    margin: auto;
+}*/
+/*.clear{
+    clear:both;
+}*/
+.boxs{
+display: block;
+}
+.box{
+    width: 33.33%;
+    float: left;
+}
+.box p{
+    background-color: coral;
+    margin: 10px;
+}

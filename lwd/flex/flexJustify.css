@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+}
+.container{
+   
+    background-color: aqua;
+    width: 80vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+   /* justify-content: flex-start;this is default
+     justify-content: flex-end; 
+     justify-content: space-between;
+     justify-content: space-around;
+     justify-content: space-evenly;
+     justify-content: center;*/
+     justify-content: ;
+}
+.child{
+background-color: rgb(237, 200, 17); 
+border: 1px solid black;
+/* width: 400px; //this wont work */
+ /* flex-basis: 200px;*/
+ display: flex;
+ 
+}
+

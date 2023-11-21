@@ -1,0 +1,39 @@
+.rootParent{
+ height: 50px;
+
+}
+.parent{
+font-size: 20px;
+color:crimson;
+position: relative;
+height:1000px
+
+
+}
+p{
+    padding:10px;
+    margin: 10px; 
+}
+.child{
+    padding:10px;
+    margin: 10px;
+}
+.child-one{
+background-color: aqua;
+/*position: fixed;*/
+/*position: sticky;/* default* /
+position: absolute;
+position: relative;
+top:10px;*/
+
+}
+.child-two{
+    background-color:blueviolet;
+    position: sticky;
+top:10px;
+}
+.child-three{
+    background-color:gray;
+    position: sticky;
+top:10px;
+}
